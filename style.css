@@ -1,0 +1,475 @@
+/* ========== Reset & Base Styles ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --text-light: #666;
+    --border-color: #e0e0e0;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-light);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== Navigation ========== */
+
+nav {
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-brand:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: var(--bg-light);
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: var(--secondary-color);
+    background: rgba(52, 152, 219, 0.1);
+}
+
+/* ========== Header/Hero Section ========== */
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.orcid-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.orcid-badge:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.orcid-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ========== Social Links ========== */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+/* ========== Main Content ========== */
+
+main {
+    background: var(--bg-white);
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 25px 0 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* ========== Keywords/Tags ========== */
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.keyword {
+    background: var(--bg-light);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* ========== Stats ========== */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+/* ========== Publications ========== */
+
+.year-group {
+    margin-bottom: 40px;
+}
+
+.year-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.publication {
+    background: var(--bg-light);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 3px solid var(--border-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.publication:hover {
+    border-left-color: var(--secondary-color);
+    box-shadow: var(--shadow-hover);
+}
+
+.publication-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.publication-meta {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.publication-journal {
+    font-style: italic;
+}
+
+.publication-type {
+    display: inline-block;
+    background: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 10px;
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+}
+
+.doi-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.doi-link:hover {
+    background: var(--primary-color);
+    text-decoration: none;
+}
+
+/* ========== Timeline (Education & Employment) ========== */
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+.timeline-role {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.timeline-org {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.timeline-location {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.timeline-department {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+/* ========== Footer ========== */
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero .subtitle {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: -23px;
+    }
+}
+
+/* ========== Print Styles ========== */
+
+@media print {
+    nav, footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .publication, .timeline-item {
+        break-inside: avoid;
+    }
+}
