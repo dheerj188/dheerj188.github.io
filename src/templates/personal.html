@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Personal Activities - {{ profile.name }}{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <h1 class="page-title">Personal Activities</h1>
+
+    <section class="section">
+        <h2 class="section-title">Hobbies & Interests</h2>
+
+        {% if activities.activities %}
+        <div class="image-gallery">
+            {% for activity in activities.activities %}
+            <div class="gallery-item">
+                {% if activity.image %}
+                <img src="{{ activity.image }}" alt="{{ activity.title }}">
+                {% else %}
+                <img src="https://via.placeholder.com/400x300?text={{ activity.title | urlencode }}" alt="{{ activity.title }}">
+                {% endif %}
+
+                <div class="gallery-caption">
+                    <div class="gallery-title">{{ activity.title }}</div>
+                    {% if activity.description %}
+                    <p style="font-size: 0.9rem; margin-top: 0.25rem;">{{ activity.description }}</p>
+                    {% endif %}
+                    {% if activity.date %}
+                    <div class="gallery-date">{{ activity.date }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p>No personal activities available yet. Add images and descriptions to personal.yaml to populate this page.</p>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="js/gallery.js"></script>
+{% endblock %}

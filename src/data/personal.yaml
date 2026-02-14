@@ -1,0 +1,17 @@
+# Personal Activities
+# Add your personal activities, hobbies, and interests here with images and descriptions
+# Images should be placed in src/static/images/personal/
+
+activities:
+  - title: "Example Hobby"
+    description: "Description of your hobby or interest"
+    date: "2024"
+    image: "images/personal/example.jpg"
+    category: "hobby"
+
+  # Add more activities below:
+  # - title: "Activity Title"
+  #   description: "Brief description"
+  #   date: "2024-01"
+  #   image: "images/personal/your-image.jpg"
+  #   category: "hobby/travel/sport/other"

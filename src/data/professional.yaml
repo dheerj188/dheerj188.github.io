@@ -1,0 +1,17 @@
+# Professional Activities
+# Add your professional activities here with images and descriptions
+# Images should be placed in src/static/images/professional/
+
+activities:
+  - title: "Example Conference Presentation"
+    description: "Presented research at a conference"
+    date: "2024-10"
+    image: "images/professional/example.jpg"
+    category: "presentation"
+
+  # Add more activities below:
+  # - title: "Activity Title"
+  #   description: "Brief description"
+  #   date: "2024-01"
+  #   image: "images/professional/your-image.jpg"
+  #   category: "conference/workshop/talk/award"

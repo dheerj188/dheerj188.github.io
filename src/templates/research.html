@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}Research - {{ profile.name }}{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <h1 class="page-title">Research</h1>
+
+    <!-- Research Overview -->
+    {% if research.overview %}
+    <section class="research-overview">
+        <h2>Research Overview</h2>
+        <div class="overview-text">
+            {{ research.overview | safe }}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Tabs for Publications and Projects -->
+    <div class="tabs">
+        <div class="tab-buttons">
+            <button class="tab-button active" data-tab="publications">Publications</button>
+            <button class="tab-button" data-tab="projects">Projects</button>
+        </div>
+
+        <!-- Publications Tab -->
+        <div class="tab-content active" id="publications">
+            <div class="section">
+                <h2 class="section-title">Publications</h2>
+
+                {% if research.publications %}
+                    {% set publications_by_year = research.publications | groupby('year') %}
+                    {% for year, pubs in publications_by_year | reverse %}
+                    <div class="year-group">
+                        <h3 class="year-header">{{ year }}</h3>
+
+                        {% for pub in pubs %}
+                        <div class="publication-card">
+                            <h4 class="pub-title">{{ pub.title }}</h4>
+
+                            {% if pub.authors %}
+                            <p class="pub-authors">{{ pub.authors }}</p>
+                            {% endif %}
+
+                            <p class="pub-venue">
+                                <em>{{ pub.venue }}</em>
+                                {% if pub.type %}
+                                <span class="pub-type">{{ pub.type }}</span>
+                                {% endif %}
+                                {% if pub.status == 'under_review' %}
+                                <span class="pub-status">Under Review</span>
+                                {% endif %}
+                            </p>
+
+                            {% if pub.doi %}
+                            <a href="https://doi.org/{{ pub.doi }}" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                DOI: {{ pub.doi }}
+                            </a>
+                            {% elif pub.url %}
+                            <a href="{{ pub.url }}" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                View Publication
+                            </a>
+                            {% endif %}
+
+                            {% if pub.pdf_url %}
+                            <a href="{{ pub.pdf_url }}" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                PDF
+                            </a>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                {% else %}
+                <p>No publications available yet.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Projects Tab -->
+        <div class="tab-content" id="projects">
+            <div class="section">
+                <h2 class="section-title">Research Projects</h2>
+
+                {% if research.projects %}
+                <div class="projects-grid">
+                    {% for project in research.projects %}
+                    <div class="project-card">
+                        <h3>{{ project.title }}</h3>
+
+                        {% if project.period %}
+                        <p class="project-period">{{ project.period }}</p>
+                        {% endif %}
+
+                        {% if project.description %}
+                        <p>{{ project.description }}</p>
+                        {% endif %}
+
+                        {% if project.tags %}
+                        <div class="project-tags">
+                            {% for tag in project.tags %}
+                            <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        {% if project.link %}
+                        <a href="{{ project.link }}" class="pub-link" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.75rem;">
+                            View Project
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No projects available yet.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Skills Section -->
+    {% if research.research_skills %}
+    <section class="section skills-section">
+        <h2 class="section-title">Research Skills</h2>
+
+        <div class="skills-grid">
+            {% if research.research_skills.methodologies %}
+            <div class="skill-category">
+                <h3>Research Methodologies</h3>
+                <ul class="skill-list">
+                    {% for skill in research.research_skills.methodologies %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% if research.research_skills.frameworks %}
+            <div class="skill-category">
+                <h3>Frameworks & Tools</h3>
+                <ul class="skill-list">
+                    {% for skill in research.research_skills.frameworks %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% if research.research_skills.domains %}
+            <div class="skill-category">
+                <h3>Research Domains</h3>
+                <ul class="skill-list">
+                    {% for skill in research.research_skills.domains %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="js/tabs.js"></script>
+{% endblock %}

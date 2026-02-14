@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Academics - {{ profile.name }}{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <h1 class="page-title">Academics</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab-buttons">
+            <button class="tab-button active" data-tab="education">Education</button>
+            <button class="tab-button" data-tab="mentors">Mentors</button>
+            <button class="tab-button" data-tab="awards">Awards</button>
+        </div>
+
+        <!-- Education Tab -->
+        <div class="tab-content active" id="education">
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+
+                {% if academics.education %}
+                <div class="timeline">
+                    {% for edu in academics.education %}
+                    <div class="timeline-item">
+                        <div class="timeline-role">{{ edu.degree }}</div>
+                        <div class="timeline-org">{{ edu.institution }}</div>
+                        {% if edu.department %}
+                        <div class="timeline-location">{{ edu.department }}</div>
+                        {% endif %}
+                        {% if edu.location %}
+                        <div class="timeline-location">📍 {{ edu.location }}</div>
+                        {% endif %}
+                        <div class="timeline-period">{{ edu.period }}</div>
+                        {% if edu.gpa %}
+                        <div class="timeline-description"><strong>GPA:</strong> {{ edu.gpa }}</div>
+                        {% endif %}
+
+                        {% if edu.courses %}
+                        <div style="margin-top: 1rem;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Courses</h4>
+                            <div class="courses-grid">
+                                {% for course in edu.courses %}
+                                <div class="course-item">{{ course }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No education information available yet.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Mentors Tab -->
+        <div class="tab-content" id="mentors">
+            <div class="section">
+                <h2 class="section-title">Mentors</h2>
+
+                {% if academics.mentors %}
+                <div class="mentors-grid">
+                    {% for mentor in academics.mentors %}
+                    <div class="mentor-card">
+                        {% if mentor.url %}
+                        <a href="{{ mentor.url }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <div class="mentor-name">{{ mentor.name }}</div>
+                        </a>
+                        {% else %}
+                        <div class="mentor-name">{{ mentor.name }}</div>
+                        {% endif %}
+
+                        {% if mentor.institution %}
+                        <div class="mentor-institution">{{ mentor.institution }}</div>
+                        {% endif %}
+
+                        {% if mentor.role %}
+                        <div class="mentor-role">{{ mentor.role }}</div>
+                        {% endif %}
+
+                        {% if mentor.area %}
+                        <div class="mentor-area"><em>Area:</em> {{ mentor.area }}</div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No mentors information available yet.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Awards Tab -->
+        <div class="tab-content" id="awards">
+            <div class="section">
+                <h2 class="section-title">Awards & Honors</h2>
+
+                {% if academics.awards %}
+                <div class="awards-list">
+                    {% for award in academics.awards %}
+                    <div class="award-card">
+                        <div class="award-title">{{ award.title }}</div>
+                        {% if award.organization %}
+                        <div class="award-org">{{ award.organization }}</div>
+                        {% endif %}
+                        {% if award.department %}
+                        <div style="font-size: 0.9rem; color: var(--text-secondary);">{{ award.department }}</div>
+                        {% endif %}
+                        {% if award.description %}
+                        <div class="award-description">{{ award.description }}</div>
+                        {% endif %}
+                        {% if award.year %}
+                        <div class="award-year">{{ award.year }}</div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No awards information available yet.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="js/tabs.js"></script>
+{% endblock %}

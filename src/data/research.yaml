@@ -1,0 +1,97 @@
+overview: |
+  My research focuses on efficient large language model training on heterogeneous CPU-GPU systems,
+  distributed machine learning, and high-performance computing. I am particularly interested in
+  optimizing resource utilization and reducing training time for large-scale AI workloads.
+
+  At IISc, I designed a hybrid CPU-GPU training framework that achieved up to 17% reduction in training
+  time for models like Llama2 and GPT2 compared to existing state-of-the-art approaches. My work involves
+  developing novel scheduling strategies, implementing producer-consumer pipelines, and integrating with
+  PyTorch's Distributed Data Parallel framework.
+
+publications:
+  - title: "A Framework for Efficient Large Language Model Training on Heterogeneous CPU-GPU Systems"
+    authors: "D. Joshi, K. Namboori, K. M. Kuriakose, S. Vadhiyar, S. Banerjee, A. Singh"
+    venue: "Submitted to a top High-Performance Computing (HPC) conference"
+    year: 2026
+    type: "conference"
+    status: "under_review"
+    doi: ""
+
+  - title: "DRL Based Service Migration and Resource Allocation in Vehicular Edge Networks"
+    authors: "G. Bolar, D. Joshi, S. P. Chennamsetti and V. K. Tumuluru"
+    venue: "3rd International Conference on Artificial Intelligence For Internet of Things (AIIoT)"
+    year: 2024
+    type: "conference"
+    status: "published"
+    doi: "10.1109/aiiot58432.2024.10574641"
+
+  - title: "A Two-Layer Connected Component Algorithm for Target Extraction Using K-means and Morphology"
+    authors: "D. Joshi, A. A. Gangotri, S. P. Chennamsetti, G. Bolar, G. Thiagarajan and S. Gurugopinath"
+    venue: "IFIP/IEEE 31st International Conference on Very Large Scale Integration (VLSI-SoC)"
+    year: 2023
+    type: "conference"
+    status: "published"
+    doi: "10.1109/VLSI-SoC57769.2023.10321878"
+
+  - title: "Performance Comparison of Learning Methods for Soil Parameter Estimation using Hyperspectral Data"
+    authors: "G. Bolar, D. Joshi, S. P. Chennamsetti and S. Gurugopinath"
+    venue: "2022 8th International Conference on Signal Processing and Communication (ICSC)"
+    year: 2022
+    type: "conference"
+    status: "published"
+    doi: "10.1109/ICSC56524.2022.10089437"
+
+projects:
+  - title: "Joint Resource Allocation and Service Migration in Vehicular Edge Networks"
+    description: "Formulated a joint MDP for network-initiated resource allocation and service migration across MEC servers. Proposed a modified DDPG-based solution achieving 26.67% reduction in service violations."
+    period: "2023 - 2024"
+    tags:
+      - "Deep Reinforcement Learning"
+      - "Edge Computing"
+      - "Vehicular Networks"
+
+  - title: "TLCC: Accelerated Connected Component Analysis via Two-Stage Parallelism"
+    description: "Designed a two-layer CCA using OR-mask filtering and parallel region-wise CCA, achieving 64.37% reduction in CPU simulation time over traditional CCA."
+    period: "2023"
+    tags:
+      - "Computer Vision"
+      - "Parallel Computing"
+      - "Image Processing"
+
+  - title: "PAC-IPV: Prefetch-Aware Cache Replacement via Insertion & Promotion Vectors"
+    description: "Implemented prefetch-aware cache replacement policy extending RRIP-based LLC in ZSim. Developed probabilistic Markov-based analytical model achieving performance competitive to SHiP at lower complexity."
+    period: "2023"
+    tags:
+      - "Computer Architecture"
+      - "Cache Optimization"
+      - "Performance Analysis"
+
+  - title: "VAJRA: Heterogeneous (GPU/FPGA) Edge Cluster for AI Workloads"
+    description: "Built a heterogeneous edge cluster using Raspberry Pi 5, Intel DE10 SoC FPGAs, and NVIDIA Jetson Orin. Developed C library for model-parallel DNN inference, scaling inference for 400M-parameter model."
+    period: "2023 - 2024"
+    tags:
+      - "Edge Computing"
+      - "FPGA"
+      - "Distributed ML"
+
+research_skills:
+  methodologies:
+    - "Deep Learning"
+    - "Reinforcement Learning"
+    - "Distributed Systems"
+    - "High-Performance Computing"
+    - "Computer Architecture"
+
+  frameworks:
+    - "PyTorch"
+    - "CUDA"
+    - "OpenMPI"
+    - "Distributed Data Parallel (DDP)"
+    - "ZSim Simulator"
+
+  domains:
+    - "Large Language Models"
+    - "Heterogeneous Computing"
+    - "Edge Computing"
+    - "Parallel and Distributed Systems"
+    - "Machine Learning Systems"

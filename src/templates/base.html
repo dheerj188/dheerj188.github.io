@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}Academic profile of {{ profile.name }}{% endblock %}">
+    <meta name="author" content="{{ profile.name }}">
+
+    <title>{% block title %}{{ profile.name }}{% endblock %}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">{{ profile.name if profile.name else "Your Name" }}</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="{% if current_page == 'index' %}active{% endif %}">Home</a></li>
+                <li><a href="academics.html" class="{% if current_page == 'academics' %}active{% endif %}">Academics</a></li>
+                <li><a href="experience.html" class="{% if current_page == 'experience' %}active{% endif %}">Experience</a></li>
+                <li><a href="research.html" class="{% if current_page == 'research' %}active{% endif %}">Research</a></li>
+                <li><a href="professional.html" class="{% if current_page == 'professional' %}active{% endif %}">Professional</a></li>
+                <li><a href="personal.html" class="{% if current_page == 'personal' %}active{% endif %}">Personal</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; {{ build_date.split(',')[1].strip() if build_date else '2026' }} {{ profile.name if profile.name else 'Your Name' }}</p>
+                <p>Last updated: {{ build_date if build_date else 'Recently' }}</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Experience - {{ profile.name }}{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <h1 class="page-title">Experience</h1>
+
+    <!-- Positions Section -->
+    <section class="section">
+        <h2 class="section-title">Positions</h2>
+
+        {% if experience.positions %}
+        <div class="timeline">
+            {% for position in experience.positions %}
+            <div class="timeline-item">
+                <div class="timeline-role">{{ position.title }}</div>
+                <div class="timeline-org">{{ position.organization }}</div>
+
+                {% if position.department %}
+                <div class="timeline-location">{{ position.department }}</div>
+                {% endif %}
+
+                {% if position.course %}
+                <div class="timeline-location">Course: {{ position.course }}</div>
+                {% endif %}
+
+                {% if position.location %}
+                <div class="timeline-location">📍 {{ position.location }}</div>
+                {% endif %}
+
+                <div class="timeline-period">{{ position.period }}</div>
+
+                {% if position.description %}
+                <div class="timeline-description">{{ position.description }}</div>
+                {% endif %}
+
+                {% if position.type %}
+                <div class="tags" style="margin-top: 0.75rem;">
+                    <span class="tag">{{ position.type }}</span>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p>No experience information available yet.</p>
+        {% endif %}
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <h2 class="section-title">Technical Skills</h2>
+
+        {% if experience.skills %}
+        <div class="skills-grid">
+            {% if experience.skills.programming %}
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    {% for skill in experience.skills.programming %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% if experience.skills.ml_tools %}
+            <div class="skill-category">
+                <h3>Machine Learning Tools</h3>
+                <ul class="skill-list">
+                    {% for skill in experience.skills.ml_tools %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% if experience.skills.systems %}
+            <div class="skill-category">
+                <h3>Systems</h3>
+                <ul class="skill-list">
+                    {% for skill in experience.skills.systems %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% if experience.skills.hdls %}
+            <div class="skill-category">
+                <h3>Hardware Description Languages</h3>
+                <ul class="skill-list">
+                    {% for skill in experience.skills.hdls %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% if experience.skills.other %}
+            <div class="skill-category">
+                <h3>Other Skills</h3>
+                <ul class="skill-list">
+                    {% for skill in experience.skills.other %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        {% else %}
+        <p>No skills information available yet.</p>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

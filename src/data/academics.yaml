@@ -1,0 +1,47 @@
+education:
+  - degree: "Master of Science (Thesis), Computer Engineering"
+    institution: "Texas A&M University"
+    department: "Department of Electrical and Computer Engineering"
+    location: "College Station, TX"
+    period: "Aug 2025 - Aug 2027"
+    gpa: "4.00/4.00"
+    courses:
+      - "Computer Architecture"
+      - "Parallel Computing"
+      - "Mathematical Methods for Signal Processing"
+      - "Operating Systems"
+      - "Machine Learning Engineering"
+
+  - degree: "Bachelor of Technology, Electronics and Communication Engineering"
+    institution: "PES University"
+    department: "Department of Electronics and Communication"
+    location: "Bengaluru, India"
+    period: "Dec 2020 - June 2024"
+    gpa: "9.35/10.00"
+    courses:
+      - "RISC-V Computer Architecture"
+      - "Machine Learning and Applications"
+      - "Computer Communication Networks"
+      - "Embedded Firmware"
+      - "Mathematics for Electronics Engineers"
+      - "Linear Algebra"
+      - "Artificial Neural Networks"
+
+mentors:
+  - name: "Dr. Sathish Vadhiyar"
+    institution: "Indian Institute of Science (IISc)"
+    role: "Advisor"
+    area: "High-Performance Computing, Parallel and Distributed Systems"
+    # url: ""  # Add mentor's website if available
+
+awards:
+  - title: "Graduate Merit Scholarship"
+    organization: "Texas A&M University"
+    department: "Department of Electrical and Computer Engineering"
+    description: "Merit-based scholarship for graduate students"
+    year: 2025
+
+  - title: "Prof. C. N. R. Rao Scholarship"
+    organization: "PES University"
+    description: "Top 5% of department (GPA-based)"
+    year: 2024

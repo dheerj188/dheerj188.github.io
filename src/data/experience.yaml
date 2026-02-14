@@ -1,0 +1,53 @@
+positions:
+  - title: "Project Associate"
+    organization: "Middleware and Runtime Systems Lab, Indian Institute of Science (IISc)"
+    department: "Department of Computational and Data Sciences"
+    location: "Bengaluru, India"
+    period: "Jul 2024 - Jul 2025"
+    type: "research"
+    description: "Research on Heterogeneous CPU-GPU Training for Large Language Models under Dr. Sathish Vadhiyar (Funding: Shell Global)"
+    # You can add more details about your work here
+
+  - title: "Undergraduate Teaching Assistant"
+    organization: "PES University"
+    course: "Artificial Neural Networks"
+    location: "Bengaluru, India"
+    period: "2023 - 2024"
+    type: "teaching"
+    description: ""  # Add description if you'd like
+
+  - title: "Intel Student Ambassador"
+    organization: "Intel Corporation"
+    location: "PES University, Bengaluru, India"
+    period: "2023 - 2024"
+    type: "ambassador"
+    description: "oneAPI Student Ambassador Program"
+
+skills:
+  programming:
+    - "C"
+    - "C++"
+    - "Python"
+    - "MATLAB"
+
+  ml_tools:
+    - "PyTorch"
+    - "OpenCV"
+    - "TensorFlow"
+
+  systems:
+    - "CUDA"
+    - "OpenMP"
+    - "OpenMPI"
+    - "PyTorch Backend"
+    - "Distributed Data Parallel (DDP)"
+
+  hdls:
+    - "Verilog"
+    - "SystemVerilog"
+
+  other:
+    - "LaTeX"
+    - "Overleaf"
+    - "Git"
+    - "System Diagram Modeling"

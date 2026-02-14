@@ -1,0 +1,25 @@
+name: "Dheemanth R Joshi"
+title: "Graduate Student & Research Associate"
+tagline: "Computer Engineering | Machine Learning | High-Performance Computing"
+email: "dheerj188@gmail.com"
+phone: "+1 979-575-4570"
+photo: "images/profile.jpg"  # Add your profile photo to src/static/images/
+
+social_links:
+  - name: "📧 Email"
+    url: "mailto:dheerj188@gmail.com"
+  - name: "💼 LinkedIn"
+    url: "https://www.linkedin.com/in/dheemanth-r-joshi-54b5b9232/"
+  - name: "🎓 Google Scholar"
+    url: "https://scholar.google.com/citations?user=fdpeJ1EAAAAJ&hl=en"
+  - name: "💻 GitHub"
+    url: "https://github.com/dheerj188"
+
+about: |
+  I am a graduate student pursuing Master of Science (Thesis) in Computer Engineering at Texas A&M University.
+  My research focuses on heterogeneous CPU-GPU training for large language models, distributed systems, and
+  high-performance computing. I have experience in machine learning systems, computer architecture, and edge computing.
+
+  Previously, I worked as a Project Associate at the Middleware and Runtime Systems Lab at the Indian Institute of Science (IISc),
+  where I developed frameworks for efficient LLM training on heterogeneous systems. I hold a Bachelor's degree in
+  Electronics and Communication Engineering from PES University.
