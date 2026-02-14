@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Fade-in animation on scroll
+    // Fade-in animation disabled to prevent content flashing
+    // Uncomment below if you want fade-in animations:
+    /*
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -57,13 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe elements with fade-on-scroll class
     document.querySelectorAll('.fade-on-scroll').forEach(el => {
         observer.observe(el);
     });
 
-    // Add fade-on-scroll class to sections
     document.querySelectorAll('.section').forEach(section => {
         section.classList.add('fade-on-scroll');
     });
+    */
 });
