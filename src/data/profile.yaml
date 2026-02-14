@@ -3,7 +3,7 @@ title: "Graduate Student & Research Associate"
 tagline: "Computer Engineering | Machine Learning | High-Performance Computing"
 email: "dheerj188@gmail.com"
 phone: "+1 979-575-4570"
-photo: "images/profile.jpg"  # Add your profile photo to src/static/images/
+# photo: "images/profile.jpg"  # Add your profile photo to src/static/images/ (uncomment when you add the photo)
 
 social_links:
   - name: "📧 Email"
