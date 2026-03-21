@@ -1,53 +1,73 @@
 positions:
+  - title: "Student Software Developer"
+    organization: "Texas A&M Engineering Experiment Station (TEES)"
+    department: "Office of the Vice Chancellor of Engineering"
+    location: "College Station, TX"
+    period: "Jan 2026 - Present"
+    type: "development"
+    description: |
+      Building end-to-end AI-driven education platforms at institutional scale — full-stack development
+      spanning data ingestion pipelines, LLM model integration, and scalable backend deployment.
+      Designing intelligent recommendation workflows for student-advisor matching and academic analytics,
+      incorporating retrieval-augmented generation and embedding-based similarity search.
+      Delivering production-ready AI services with robust REST APIs serving large university-wide user bases.
+
   - title: "Project Associate"
-    organization: "Middleware and Runtime Systems Lab, Indian Institute of Science (IISc)"
-    department: "Department of Computational and Data Sciences"
-    location: "Bengaluru, India"
+    organization: "Middleware & Runtime Systems Lab, Indian Institute of Science (IISc)"
+    department: "Advisor: Dr. Sathish Vadhiyar — Funded by Shell Global"
+    location: "Bangalore, India"
     period: "Jul 2024 - Jul 2025"
     type: "research"
-    description: "Research on Heterogeneous CPU-GPU Training for Large Language Models under Dr. Sathish Vadhiyar (Funding: Shell Global)"
-    # You can add more details about your work here
+    description: |
+      Architected SkipPar, a hybrid CPU-GPU LLM training framework (HCW @ IPDPS 2026, First Author).
+      Designed a co-execution paradigm where the GPU handles all forward and backward passes while the CPU
+      concurrently runs parameter updates. Implemented a 4-thread producer-consumer pipeline coordinating
+      GPU computation with CPU optimizer steps; integrated PyTorch DDP hooks for multi-GPU synchronization.
+      Benchmarked on NVIDIA A100 & H100 GPUs using LLaMA-2 (10B) and GPT-2 (9B); achieved up to 17%
+      reduction in end-to-end training time against AAAI- and ICPP-published baselines.
 
   - title: "Undergraduate Teaching Assistant"
     organization: "PES University"
     course: "Artificial Neural Networks"
-    location: "Bengaluru, India"
+    location: "Bangalore, India"
     period: "2023 - 2024"
     type: "teaching"
-    description: ""  # Add description if you'd like
+    description: "Conducted lab sessions and guided student projects on network design, backpropagation, and training dynamics."
 
-  - title: "Intel Student Ambassador"
+  - title: "Intel Student Ambassador, oneAPI"
     organization: "Intel Corporation"
-    location: "PES University, Bengaluru, India"
+    location: "PES University, Bangalore, India"
     period: "2023 - 2024"
     type: "ambassador"
-    description: "oneAPI Student Ambassador Program"
+    description: "Promoted heterogeneous programming models and parallel computing tools across the university developer community."
 
 skills:
+  systems_hpc:
+    - "CUDA"
+    - "OpenMP"
+    - "OpenMPI"
+    - "PyTorch (DDP, autograd hooks, backend extensions)"
+    - "ZSim"
   programming:
     - "C"
     - "C++"
     - "Python"
     - "MATLAB"
-
-  ml_tools:
-    - "PyTorch"
-    - "OpenCV"
-    - "TensorFlow"
-
-  systems:
-    - "CUDA"
-    - "OpenMP"
-    - "OpenMPI"
-    - "PyTorch Backend"
-    - "Distributed Data Parallel (DDP)"
-
-  hdls:
     - "Verilog"
     - "SystemVerilog"
-
-  other:
+  ml_math:
+    - "PyTorch"
+    - "OpenCV"
+    - "Linear Algebra"
+    - "Probabilistic Modeling"
+    - "Markov Chains"
+    - "Monte Carlo Methods"
+  hardware:
+    - "NVIDIA A100, H100, Jetson Orin"
+    - "Intel DE10 SoC FPGA"
+    - "Raspberry Pi 5"
+  tools:
     - "LaTeX"
-    - "Overleaf"
     - "Git"
-    - "System Diagram Modeling"
+    - "Linux"
+    - "Overleaf"

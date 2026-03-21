@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% block description %}Academic profile of {{ profile.name }}{% endblock %}">
+    <meta name="description" content="{% block description %}{{ profile.name }} — {{ profile.tagline }}{% endblock %}">
     <meta name="author" content="{{ profile.name }}">
-
     <title>{% block title %}{{ profile.name }}{% endblock %}</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
-
     {% block extra_css %}{% endblock %}
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand">{{ profile.name if profile.name else "Your Name" }}</a>
+            <a href="index.html" class="nav-brand">{{ profile.name }}</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="{% if current_page == 'index' %}active{% endif %}">Home</a></li>
                 <li><a href="academics.html" class="{% if current_page == 'academics' %}active{% endif %}">Academics</a></li>
@@ -37,22 +32,18 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
         {% block content %}{% endblock %}
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; {{ build_date.split(',')[1].strip() if build_date else '2026' }} {{ profile.name if profile.name else 'Your Name' }}</p>
-                <p>Last updated: {{ build_date if build_date else 'Recently' }}</p>
+                <p>&copy; {{ build_date.split(',')[1].strip() if build_date else '2026' }} {{ profile.name }}</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
     {% block extra_js %}{% endblock %}
 </body>

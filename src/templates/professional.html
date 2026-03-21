@@ -1,28 +1,23 @@
 {% extends "base.html" %}
 
-{% block title %}Professional Activities - {{ profile.name }}{% endblock %}
+{% block title %}Professional — {{ profile.name }}{% endblock %}
 
 {% block content %}
 <div class="container page-container">
     <h1 class="page-title">Professional Activities</h1>
 
     <section class="section">
-        <h2 class="section-title">Activities & Events</h2>
-
-        {% if activities.activities %}
+        {% if activities.activities and activities.activities | length > 0 and activities.activities[0].title != "Example Conference Presentation" %}
         <div class="image-gallery">
             {% for activity in activities.activities %}
             <div class="gallery-item">
                 {% if activity.image %}
                 <img src="{{ activity.image }}" alt="{{ activity.title }}">
-                {% else %}
-                <img src="https://via.placeholder.com/400x300?text={{ activity.title | urlencode }}" alt="{{ activity.title }}">
                 {% endif %}
-
                 <div class="gallery-caption">
                     <div class="gallery-title">{{ activity.title }}</div>
                     {% if activity.description %}
-                    <p style="font-size: 0.9rem; margin-top: 0.25rem;">{{ activity.description }}</p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">{{ activity.description }}</p>
                     {% endif %}
                     {% if activity.date %}
                     <div class="gallery-date">{{ activity.date }}</div>
@@ -32,7 +27,7 @@
             {% endfor %}
         </div>
         {% else %}
-        <p>No professional activities available yet. Add images and descriptions to professional.yaml to populate this page.</p>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Content coming soon.</p>
         {% endif %}
     </section>
 </div>

@@ -4,7 +4,8 @@ education:
     department: "Department of Electrical and Computer Engineering"
     location: "College Station, TX"
     period: "Aug 2025 - Aug 2027"
-    gpa: "4.00/4.00"
+    highlight: "Graduate Merit Scholarship"
+    thesis: "Heterogeneous execution frameworks and probabilistic methods for efficient large-scale ML"
     courses:
       - "Computer Architecture"
       - "Parallel Computing"
@@ -15,24 +16,48 @@ education:
   - degree: "Bachelor of Technology, Electronics and Communication Engineering"
     institution: "PES University"
     department: "Department of Electronics and Communication"
-    location: "Bengaluru, India"
-    period: "Dec 2020 - June 2024"
-    gpa: "9.35/10.00"
+    location: "Bangalore, India"
+    period: "Dec 2020 - Jun 2024"
+    gpa: "9.35 / 10.00"
+    highlight: "Prof. C. N. R. Rao Scholarship (top 5% of department)"
     courses:
       - "RISC-V Computer Architecture"
       - "Machine Learning and Applications"
       - "Computer Communication Networks"
       - "Embedded Firmware"
-      - "Mathematics for Electronics Engineers"
       - "Linear Algebra"
       - "Artificial Neural Networks"
 
 mentors:
+  - name: "Dr. Vivek Sarin"
+    institution: "Texas A&M University"
+    role: "Thesis Advisor"
+    area: "Probabilistic ML, Gaussian Processes, Numerical Algorithms, GPU Architecture and Programming, LLMs"
+
   - name: "Dr. Sathish Vadhiyar"
     institution: "Indian Institute of Science (IISc)"
-    role: "Advisor"
+    role: "Pre-doctoral Research Advisor"
     area: "High-Performance Computing, Parallel and Distributed Systems"
-    # url: ""  # Add mentor's website if available
+
+  - name: "Dr. J. F. Chamberland"
+    institution: "Texas A&M University"
+    role: "Advisor (TEES)"
+    area: "AI-driven Education Platforms"
+
+  - name: "Dr. Sanjeev Gurugopinath"
+    institution: "PES University"
+    role: "Undergraduate Research Mentor"
+    area: ""
+
+  - name: "Dr. Vamsi Krishna Tumuluru"
+    institution: "PES University"
+    role: "Undergraduate Research Mentor"
+    area: ""
+
+  - name: "Dr. Sathya Prasad"
+    institution: "PES University"
+    role: "Undergraduate Research Mentor"
+    area: ""
 
 awards:
   - title: "Graduate Merit Scholarship"
@@ -43,5 +68,5 @@ awards:
 
   - title: "Prof. C. N. R. Rao Scholarship"
     organization: "PES University"
-    description: "Top 5% of department (GPA-based)"
+    description: "Awarded to the top 5% of the department (GPA-based selection)"
     year: 2024

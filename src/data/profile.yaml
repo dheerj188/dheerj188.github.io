@@ -1,25 +1,53 @@
 name: "Dheemanth R Joshi"
-title: "Graduate Student & Research Associate"
-tagline: "Computer Engineering | Machine Learning | High-Performance Computing"
+title: "MS (Thesis) Student"
+affiliation: "Texas A&M University"
+department: "Department of Electrical & Computer Engineering"
+tagline: "ML Systems | Heterogeneous Computing | Probabilistic ML"
 email: "dheerj188@gmail.com"
-phone: "+1 979-575-4570"
-# photo: "images/profile.jpg"  # Add your profile photo to src/static/images/ (uncomment when you add the photo)
+phone: "+1 (979) 575-4570"
+photo: "images/profile.jpg"
 
 social_links:
-  - name: "📧 Email"
+  - name: "Email"
     url: "mailto:dheerj188@gmail.com"
-  - name: "💼 LinkedIn"
+    icon: "email"
+  - name: "LinkedIn"
     url: "https://www.linkedin.com/in/dheemanth-r-joshi-54b5b9232/"
-  - name: "🎓 Google Scholar"
+    icon: "linkedin"
+  - name: "Scholar"
     url: "https://scholar.google.com/citations?user=fdpeJ1EAAAAJ&hl=en"
-  - name: "💻 GitHub"
+    icon: "scholar"
+  - name: "GitHub"
     url: "https://github.com/dheerj188"
+    icon: "github"
+  - name: "CV"
+    url: "images/CV.pdf"
+    icon: "cv"
+
+research_interests:
+  - "ML Systems & Heterogeneous Computing"
+  - "Algorithm-Hardware Co-design for AI"
+  - "Probabilistic ML (Gaussian Processes, Deep Kernel Learning, Bayesian Optimization)"
+  - "Efficient LLM Training & Inference"
+  - "Computer Architecture (Cache Hierarchies, Memory Systems, Accelerator Design)"
 
 about: |
-  I am a graduate student pursuing Master of Science (Thesis) in Computer Engineering at Texas A&M University.
-  My research focuses on heterogeneous CPU-GPU training for large language models, distributed systems, and
-  high-performance computing. I have experience in machine learning systems, computer architecture, and edge computing.
+  <p>Hi! I'm a Computer Engineering grad student at Texas A&M, and I spend most of my time thinking about how to make AI systems faster, smarter, and more practical in the real world. I didn't start out knowing exactly what that meant &mdash; it took a lot of late nights, failed experiments, and genuinely humbling moments before I found the problems that really stuck with me.</p>
 
-  Previously, I worked as a Project Associate at the Middleware and Runtime Systems Lab at the Indian Institute of Science (IISc),
-  where I developed frameworks for efficient LLM training on heterogeneous systems. I hold a Bachelor's degree in
-  Electronics and Communication Engineering from PES University.
+  <p>Before Texas A&M, I was a pre-doctoral researcher at the Indian Institute of Science (IISc), where I got my first real taste of what it means to do research that matters. More than any result I published, what IISc gave me was a deeper instinct for asking the right questions &mdash; and the patience to sit with hard problems long enough to actually understand them. I did my undergrad in Electronics and Communication Engineering at PES University, which is where the hardware obsession started.</p>
+
+  <p>For the nerds: I work on integrating Gaussian Processes with LLMs to build uncertainty-aware AI that's actually scalable and deployable on resource-constrained HPC clusters &mdash; think single DGX setups. My work spans Agentic AI systems (LLM training &amp; inference), computer architecture, and probabilistic ML, trying to make all three play nicely together.</p>
+
+  <p>Outside of research, you'll probably find me on the badminton or pickleball court. Always looking for new people to play with &mdash; let's rally!</p>
+
+news:
+  - date: "Mar 2026"
+    text: "Paper accepted at <strong>HCW @ IPDPS 2026</strong> &mdash; SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training."
+  - date: "Feb 2026"
+    text: "Invited to join as a member of <strong>Texas Delta, Tau Beta Pi</strong> &mdash; The Engineering Honor Society."
+  - date: "Jan 2026"
+    text: "Joined <strong>Texas A&M Engineering Experiment Station (TEES)</strong> as a Student Software Developer."
+  - date: "Aug 2025"
+    text: "Started MS (Thesis) in Computer Engineering at <strong>Texas A&M University</strong> with Graduate Merit Scholarship."
+  - date: "Jul 2024"
+    text: "Joined the Middleware & Runtime Systems Lab at <strong>IISc</strong> as a Project Associate / Pre-doctoral Researcher."
