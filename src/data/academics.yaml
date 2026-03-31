@@ -34,6 +34,11 @@ mentors:
     role: "Thesis Advisor"
     area: "Probabilistic ML, Gaussian Processes, Numerical Algorithms, GPU Architecture and Programming, LLMs"
 
+  - name: "Dr. Paul Gratz"
+    institution: "Texas A&M University"
+    role: "Thesis Advisor"
+    area: "GPU Architecture and Programming"
+
   - name: "Dr. Sathish Vadhiyar"
     institution: "Indian Institute of Science (IISc)"
     role: "Pre-doctoral Research Advisor"
