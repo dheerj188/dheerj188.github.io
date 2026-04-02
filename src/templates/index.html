@@ -16,6 +16,17 @@
                 <p class="title">{{ profile.title }}, {{ profile.affiliation }}</p>
                 <p class="tagline">{{ profile.tagline }}</p>
 
+                {% if profile.offices %}
+                <div class="office-info">
+                    {% for office in profile.offices %}
+                    <p class="office-item">
+                        <span class="office-icon">&#x1F4CD;</span>
+                        <span>{{ office.label }}{% if office.sublabel %}, {{ office.sublabel }}{% endif %}{% if office.location %} &mdash; {{ office.location }}{% endif %}</span>
+                    </p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
                 {% if profile.social_links %}
                 <div class="social-links">
                     {% for link in profile.social_links %}

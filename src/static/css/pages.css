@@ -44,6 +44,24 @@
     margin-bottom: 0.75rem;
 }
 
+/* Office Info */
+.office-info {
+    margin-bottom: 0.75rem;
+}
+
+.office-item {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 0.15rem 0;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.office-icon {
+    flex-shrink: 0;
+}
+
 /* About */
 .about-text {
     font-size: 0.9rem;

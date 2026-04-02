@@ -5,6 +5,13 @@ department: "Department of Electrical & Computer Engineering"
 tagline: "ML Systems | Heterogeneous Computing | Probabilistic ML"
 email: "dheerj188@gmail.com"
 phone: "+1 (979) 575-4570"
+
+offices:
+  - label: "Office of the Vice Chancellor and Dean of Engineering"
+    location: "ZACH 5th Floor"
+  - label: "462, Peterson Building"
+    sublabel: "Department of Computer Science and Engineering"
+    location: ""
 photo: "images/profile.jpg"
 
 social_links:
