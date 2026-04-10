@@ -7,16 +7,16 @@
     <h1 class="page-title">Professional Activities</h1>
 
     {% set category_labels = {
-        "publication": "🏆 Publication",
-        "conference":  "🌍 Conference",
-        "research":    "🔬 Research",
-        "leadership":  "🛠 Leadership"
+        "publication": "Publication",
+        "conference":  "Conference",
+        "research":    "Research",
+        "leadership":  "Leadership"
     } %}
 
     {% if activities.timeline and activities.timeline | length > 0 %}
     <section class="section">
         <div class="prof-timeline">
-            {% for item in activities.timeline %}
+            {% for item in activities.timeline | reverse %}
             <div class="prof-timeline-item">
                 <div class="prof-timeline-date">{{ item.date }}</div>
                 <div class="prof-timeline-card">
@@ -55,6 +55,8 @@
 <!-- Timeline image lightbox -->
 <div class="lightbox" id="timeline-lightbox">
     <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox-next" aria-label="Next">&rsaquo;</button>
     <div class="lightbox-content">
         <img src="" alt="">
         <div class="lightbox-caption"></div>
