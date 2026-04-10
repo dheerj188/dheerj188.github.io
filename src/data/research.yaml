@@ -1,7 +1,7 @@
 publications:
   - title: "SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training via Efficient Scheduling of Parameter Updates"
     authors: "<strong>D. Joshi</strong>, K. Namboori, K. M. Kuriakose, S. Vadhiyar, S. Banerjee, A. Singh"
-    venue: "35th HCW, 40th IEEE International Parallel and Distributed Processing Symposium (IPDPSW)"
+    venue: "IEEE International Parallel and Distributed Processing Symposium (IPDPSW) 2026"
     year: 2026
     status: "Accepted"
     note: "First Author"

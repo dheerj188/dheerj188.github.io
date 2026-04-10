@@ -77,7 +77,7 @@ timeline:
     location: "College Station, TX"
 
   - date: "Mar 2026"
-    title: "Paper Accepted at IPDPSW 2026 (HCW @ IPDPS)"
-    description: "Paper accepted at the 35th Heterogeneous Computing Workshop (HCW) at IPDPS 2026 — SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training. Presenting in New Orleans."
+    title: "Paper Accepted at IPDPSW 2026"
+    description: "Paper accepted at the IEEE International Parallel and Distributed Processing Symposium (IPDPSW) 2026 — SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training. Presenting in New Orleans."
     category: "publication"
     location: "New Orleans, USA"

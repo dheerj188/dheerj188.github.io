@@ -19,7 +19,7 @@ positions:
     period: "Jul 2024 - Jul 2025"
     type: "research"
     description: |
-      Architected SkipPar, a hybrid CPU-GPU LLM training framework (HCW @ IPDPS 2026, First Author).
+      Architected SkipPar, a hybrid CPU-GPU LLM training framework (IPDPSW 2026, First Author).
       Designed a co-execution paradigm where the GPU handles all forward and backward passes while the CPU
       concurrently runs parameter updates. Implemented a 4-thread producer-consumer pipeline coordinating
       GPU computation with CPU optimizer steps; integrated PyTorch DDP hooks for multi-GPU synchronization.
