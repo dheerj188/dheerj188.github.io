@@ -6,33 +6,62 @@
 <div class="container page-container">
     <h1 class="page-title">Professional Activities</h1>
 
+    {% set category_labels = {
+        "publication": "🏆 Publication",
+        "conference":  "🌍 Conference",
+        "research":    "🔬 Research",
+        "leadership":  "🛠 Leadership"
+    } %}
+
+    {% if activities.timeline and activities.timeline | length > 0 %}
     <section class="section">
-        {% if activities.activities and activities.activities | length > 0 and activities.activities[0].title != "Example Conference Presentation" %}
-        <div class="image-gallery">
-            {% for activity in activities.activities %}
-            <div class="gallery-item">
-                {% if activity.image %}
-                <img src="{{ activity.image }}" alt="{{ activity.title }}">
-                {% endif %}
-                <div class="gallery-caption">
-                    <div class="gallery-title">{{ activity.title }}</div>
-                    {% if activity.description %}
-                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">{{ activity.description }}</p>
+        <div class="prof-timeline">
+            {% for item in activities.timeline %}
+            <div class="prof-timeline-item">
+                <div class="prof-timeline-date">{{ item.date }}</div>
+                <div class="prof-timeline-card">
+                    <div class="prof-timeline-header">
+                        <div class="prof-timeline-title">{{ item.title }}</div>
+                        {% if item.category and item.category in category_labels %}
+                        <span class="prof-timeline-cat cat-{{ item.category }}">{{ category_labels[item.category] }}</span>
+                        {% endif %}
+                    </div>
+                    {% if item.description %}
+                    <p class="prof-timeline-desc">{{ item.description }}</p>
                     {% endif %}
-                    {% if activity.date %}
-                    <div class="gallery-date">{{ activity.date }}</div>
+                    {% if item.location %}
+                    <div class="prof-timeline-location">📍 {{ item.location }}</div>
+                    {% endif %}
+                    {% if item.image %}
+                    <img
+                        src="{{ item.image }}"
+                        alt="{{ item.title }}"
+                        class="prof-timeline-img"
+                        loading="lazy"
+                    >
                     {% endif %}
                 </div>
             </div>
             {% endfor %}
         </div>
-        {% else %}
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Content coming soon.</p>
-        {% endif %}
     </section>
+    {% else %}
+    <section class="section">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Content coming soon.</p>
+    </section>
+    {% endif %}
+</div>
+
+<!-- Timeline image lightbox -->
+<div class="lightbox" id="timeline-lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+        <img src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
 </div>
 {% endblock %}
 
 {% block extra_js %}
-<script src="js/gallery.js"></script>
+<script src="js/timeline.js"></script>
 {% endblock %}

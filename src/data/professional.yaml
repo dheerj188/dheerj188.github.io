@@ -1,17 +1,83 @@
-# Professional Activities
-# Add your professional activities here with images and descriptions
-# Images should be placed in src/static/images/professional/
+timeline:
+  - date: "Apr – May 2022"
+    title: "Student Vice Chair, IEEE Communications Society"
+    description: "Served as Student Vice Chair of the IEEE Communications Society (ComSoc) chapter, organizing events and driving student engagement in communications engineering."
+    category: "leadership"
+    image: "images/professional/comsoc.jpg"
 
-activities:
-  - title: "Example Conference Presentation"
-    description: "Presented research at a conference"
-    date: "2024-10"
-    image: "images/professional/example.jpg"
-    category: "presentation"
+  - date: "Aug 2022"
+    title: "Paper Accepted at ICSC 2022"
+    description: "Research on hyperspectral prediction accepted at the International Conference on Semantic Computing (ICSC 2022)."
+    category: "publication"
 
-  # Add more activities below:
-  # - title: "Activity Title"
-  #   description: "Brief description"
-  #   date: "2024-01"
-  #   image: "images/professional/your-image.jpg"
-  #   category: "conference/workshop/talk/award"
+  - date: "Jun – Jul 2023"
+    title: "Workshop Development & Student Mentoring, CIE"
+    description: "Joined CIE to develop workshops and mentor students in Heterogeneous Computing and Machine Learning."
+    category: "leadership"
+
+  - date: "Oct 2023"
+    title: "Intel Student Ambassador, PES University"
+    description: "Appointed as Intel Student Ambassador at PES University (PESU), representing Intel's academic and research initiatives on campus."
+    category: "leadership"
+    image: "images/professional/intel_ambassador.jpeg"
+
+  - date: "Oct 2023"
+    title: "TLCC Accelerator Work Accepted at VLSI-SoC 2023"
+    description: "Research on the TLCC Accelerator accepted at VLSI-SoC 2023. Attended the conference and presented the work in Dubai, UAE."
+    category: "publication"
+    location: "Dubai, UAE"
+    image: "images/professional/vlsi_soc.jpg"
+
+  - date: "Nov 2023"
+    title: "Semiconductor Summit, IIT Bombay"
+    description: "Visited the Indian Institute of Technology Bombay to attend the Semiconductor Summit — engaging with industry leaders and researchers in chip design and fabrication."
+    category: "conference"
+    location: "Mumbai, India"
+    image: "images/professional/iit_bombay.jpg"
+
+  - date: "Jan 2024"
+    title: "Joined IISc as Research Intern"
+    description: "Joined the Middleware & Runtime Systems Lab at the Indian Institute of Science (IISc) as a Project Associate and Pre-doctoral Researcher."
+    category: "research"
+    location: "Bengaluru, India"
+    image: "images/professional/iisc.jpg"
+
+  - date: "Mar 2024"
+    title: "Intel Gaudi Accelerator Workshop, IISc"
+    description: "Attended the Intel Gaudi Accelerator Workshop hosted at IISc, exploring next-generation AI accelerator architecture and programming models."
+    category: "conference"
+    location: "Bengaluru, India"
+    image: "images/professional/intel_iisc.jpg"
+
+  - date: "May – Jul 2024"
+    title: "VAJRA: Heterogeneous Cluster for Edge AI, PESU"
+    description: "Led a team to design and build VAJRA, a heterogeneous compute cluster for Edge AI R&D at PES University. The project was selected for funding by IHFC, IIT Delhi."
+    category: "research"
+    location: "Bengaluru, India"
+    image: "images/professional/vajra.jpg"
+
+  - date: "Feb 2025"
+    title: "NVIDIA DGX Blackwell Launch Event"
+    description: "Attended the NVIDIA DGX Blackwell Launch Event at Leela Palace, Bengaluru, on behalf of the IISc lab — engaging with NVIDIA leadership on the future of AI compute infrastructure."
+    category: "conference"
+    location: "Bengaluru, India"
+    image: "images/professional/nvidia_leela.jpg"
+
+  - date: "Jul 2025"
+    title: "Joined Texas A&M University as MS (Thesis) Student"
+    description: "Completed pre-doctoral research at IISc and joined Texas A&M University as an MS (Thesis) student in Computer Engineering with a Graduate Merit Scholarship."
+    category: "research"
+    location: "College Station, TX"
+    image: "images/professional/tamu.jpg"
+
+  - date: "Jan 2026"
+    title: "AI Systems Developer, Office of the Vice Chancellor of Engineering, Texas A&M"
+    description: "Joined the Office of the Vice Chancellor of Engineering at Texas A&M to build AI systems and integrate them into university technology and education platforms."
+    category: "leadership"
+    location: "College Station, TX"
+
+  - date: "Mar 2026"
+    title: "Paper Accepted at IPDPSW 2026 (HCW @ IPDPS)"
+    description: "Paper accepted at the 35th Heterogeneous Computing Workshop (HCW) at IPDPS 2026 — SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training. Presenting in New Orleans."
+    category: "publication"
+    location: "New Orleans, USA"
