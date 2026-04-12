@@ -82,6 +82,12 @@ class SiteBuilder:
                 shutil.copytree(src, dst)
                 print(f"Copied {subdir}/ to output")
 
+        # Copy root-level static files (e.g. verification files)
+        for f in self.static_dir.iterdir():
+            if f.is_file():
+                shutil.copy2(f, self.output_dir / f.name)
+                print(f"Copied {f.name} to output")
+
     def build_page(self, template_name, output_name, **context):
         """Render a template and save to output"""
         try:
