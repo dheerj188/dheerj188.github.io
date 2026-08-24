@@ -5,13 +5,23 @@ education:
     location: "College Station, TX"
     period: "Aug 2025 - Aug 2027"
     highlight: "Graduate Merit Scholarship"
-    thesis: "Heterogeneous execution frameworks and probabilistic methods for efficient large-scale ML"
+    thesis: "Systems and scheduling for efficient agentic AI inference"
     courses:
-      - "Computer Architecture"
-      - "Parallel Computing"
-      - "Mathematical Methods for Signal Processing"
-      - "Operating Systems"
-      - "Machine Learning Engineering"
+      - name: "Machine Learning Engineering"
+        grade: "A"
+        score: "98.5%"
+      - name: "Parallel Computing"
+        grade: "A"
+        score: "98.5%"
+      - name: "Computer Architecture"
+        grade: "A"
+        score: "93.5%"
+      - name: "Operating Systems"
+        grade: "A"
+        score: "91.5%"
+      - name: "Mathematical Methods for Signal Processing"
+        grade: "A"
+        score: "91.25%"
 
   - degree: "Bachelor of Technology, Electronics and Communication Engineering"
     institution: "PES University"
@@ -27,42 +37,6 @@ education:
       - "Embedded Firmware"
       - "Linear Algebra"
       - "Artificial Neural Networks"
-
-mentors:
-  - name: "Dr. Vivek Sarin"
-    institution: "Texas A&M University"
-    role: "Thesis Advisor"
-    area: "Probabilistic ML, Gaussian Processes, Numerical Algorithms, GPU Architecture and Programming, LLMs"
-
-  - name: "Dr. Paul Gratz"
-    institution: "Texas A&M University"
-    role: "Thesis Advisor"
-    area: "GPU Architecture and Programming"
-
-  - name: "Dr. Sathish Vadhiyar"
-    institution: "Indian Institute of Science (IISc)"
-    role: "Pre-doctoral Research Advisor"
-    area: "High-Performance Computing, Parallel and Distributed Systems"
-
-  - name: "Dr. J. F. Chamberland"
-    institution: "Texas A&M University"
-    role: "Advisor (TEES)"
-    area: "AI-driven Education Platforms"
-
-  - name: "Dr. Sanjeev Gurugopinath"
-    institution: "PES University"
-    role: "Undergraduate Research Mentor"
-    area: ""
-
-  - name: "Dr. Vamsi Krishna Tumuluru"
-    institution: "PES University"
-    role: "Undergraduate Research Mentor"
-    area: ""
-
-  - name: "Dr. Sathya Prasad"
-    institution: "PES University"
-    role: "Undergraduate Research Mentor"
-    area: ""
 
 awards:
   - title: "Graduate Merit Scholarship"

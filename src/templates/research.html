@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Research — {{ profile.name }}{% endblock %}
+{% block title %}Research | {{ profile.name }}{% endblock %}
 {% block canonical %}research.html{% endblock %}
 
 {% block content %}
@@ -34,6 +34,16 @@
                             <span class="pub-status">{{ pub.note }}</span>
                             {% endif %}
                         </p>
+                        {% if pub.organizations %}
+                        <div class="pub-orgs">
+                            <span class="pub-orgs-label">Collaborating organizations</span>
+                            <span class="pub-orgs-list">
+                                {% for org in pub.organizations %}
+                                <span class="pub-org{% if org.home %} pub-org-home{% endif %}">{{ org.name }}</span>
+                                {% endfor %}
+                            </span>
+                        </div>
+                        {% endif %}
                         {% if pub.doi %}
                         <a href="https://doi.org/{{ pub.doi }}" class="pub-link" target="_blank" rel="noopener noreferrer">
                             [paper]

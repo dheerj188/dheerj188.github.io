@@ -1,4 +1,4 @@
-// Professional Timeline — lightbox + scroll-reveal
+// Professional Timeline: lightbox + scroll-reveal
 
 document.addEventListener('DOMContentLoaded', () => {
     // ── Scroll-reveal ──────────────────────────────────────────────

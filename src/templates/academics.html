@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Academics — {{ profile.name }}{% endblock %}
+{% block title %}Academics | {{ profile.name }}{% endblock %}
 {% block canonical %}academics.html{% endblock %}
 
 {% block content %}
@@ -10,7 +10,6 @@
     <div class="tabs">
         <div class="tab-buttons">
             <button class="tab-button active" data-tab="education">Education</button>
-            <button class="tab-button" data-tab="mentors">Mentors</button>
             <button class="tab-button" data-tab="awards">Awards</button>
         </div>
 
@@ -42,7 +41,14 @@
                         <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.4rem; font-weight: 600;">Coursework</div>
                         <div class="courses-grid">
                             {% for course in edu.courses %}
+                            {% if course is mapping %}
+                            <div class="course-item">
+                                <span class="course-name">{{ course.name }}</span>
+                                <span class="course-grade">{{ course.grade }}{% if course.score %} <span class="course-score">{{ course.score }}</span>{% endif %}</span>
+                            </div>
+                            {% else %}
                             <div class="course-item">{{ course }}</div>
+                            {% endif %}
                             {% endfor %}
                         </div>
                     </div>
@@ -52,35 +58,6 @@
             </div>
             {% else %}
             <p>No education information available yet.</p>
-            {% endif %}
-        </div>
-
-        <div class="tab-content" id="mentors">
-            {% if academics.mentors %}
-            <div class="mentors-grid">
-                {% for mentor in academics.mentors %}
-                <div class="mentor-card">
-                    {% if mentor.url %}
-                    <a href="{{ mentor.url }}" target="_blank" rel="noopener noreferrer" style="border-bottom: none;">
-                        <div class="mentor-name">{{ mentor.name }}</div>
-                    </a>
-                    {% else %}
-                    <div class="mentor-name">{{ mentor.name }}</div>
-                    {% endif %}
-                    {% if mentor.institution %}
-                    <div class="mentor-institution">{{ mentor.institution }}</div>
-                    {% endif %}
-                    {% if mentor.role %}
-                    <div class="mentor-role">{{ mentor.role }}</div>
-                    {% endif %}
-                    {% if mentor.area %}
-                    <div class="mentor-area"><em>Area:</em> {{ mentor.area }}</div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            {% else %}
-            <p>No mentors information available yet.</p>
             {% endif %}
         </div>
 

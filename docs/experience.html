@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dheemanth R Joshi — ML Systems | Heterogeneous Computing | Probabilistic ML. MS (Thesis) student in Computer Engineering at Texas A&M University. Research in ML Systems, Heterogeneous Computing, and Probabilistic ML.">
+    <meta name="description" content="Dheemanth R Joshi. Agentic AI Systems | Inference Serving & Scheduling | Computer Architecture. MS (Thesis) student in Computer Engineering at Texas A&M University. Research in agentic AI serving systems, LLM routing, inference scheduling, and computer architecture.">
     <meta name="author" content="Dheemanth R Joshi">
     <meta name="keywords" content="Dheemanth R Joshi, Dheemanth Joshi, ML Systems, Heterogeneous Computing, Probabilistic ML, Texas A&M, Computer Engineering, LLM Training, Gaussian Processes, GPU, Research">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Dheemanth R Joshi — ML Systems Researcher">
+    <meta property="og:title" content="Dheemanth R Joshi | Agentic AI Systems Researcher">
     <meta property="og:description" content="Dheemanth R Joshi is an MS (Thesis) student at Texas A&M University working on ML Systems, Heterogeneous Computing, and Probabilistic ML.">
     <meta property="og:url" content="https://dheerj188.github.io/">
     <meta property="og:site_name" content="Dheemanth R Joshi">
@@ -18,7 +18,7 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://dheerj188.github.io/experience.html">
 
-    <title>Experience — Dheemanth R Joshi</title>
+    <title>Experience | Dheemanth R Joshi</title>
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
@@ -53,12 +53,31 @@
 
         <div class="timeline">
             <div class="timeline-item">
+                <div class="timeline-role">Graduate Research Assistant</div>
+                <div class="timeline-org">Texas A&M Engineering Experiment Station (TEES)</div>
+                <div class="timeline-location">Texas A&M University</div>
+                <div class="timeline-location">College Station, TX</div>
+                <div class="timeline-period">Aug 2026 - Present</div>
+                <div class="timeline-description">Research on agentic AI serving systems: program-aware inference runtimes that treat a multi-turn
+agent trace, rather than an isolated request, as the unit of scheduling. Building schedulers that
+pause, resume, and time-share long-horizon agent workloads across a pool of models on shared GPUs,
+with KV-cache management policies that decide per trace whether to offload conversational state to
+CPU memory or recompute it on resume. Investigating online routing over heterogeneous model pools
+(contextual bandits with delayed accuracy-latency rewards) and the architectural bottlenecks that
+dominate end-to-end agent latency: cache hierarchies, host-device memory traffic, and CPU-side
+runtime overheads.
+</div>
+                <div class="tags" style="margin-top: 0.5rem;">
+                    <span class="tag">research</span>
+                </div>
+            </div>
+            <div class="timeline-item">
                 <div class="timeline-role">Student Software Developer</div>
                 <div class="timeline-org">Texas A&M Engineering Experiment Station (TEES)</div>
                 <div class="timeline-location">Office of the Vice Chancellor of Engineering</div>
                 <div class="timeline-location">College Station, TX</div>
                 <div class="timeline-period">Jan 2026 - Present</div>
-                <div class="timeline-description">Building end-to-end AI-driven education platforms at institutional scale — full-stack development
+                <div class="timeline-description">Building end-to-end AI-driven education platforms at institutional scale, spanning full-stack development
 spanning data ingestion pipelines, LLM model integration, and scalable backend deployment.
 Designing intelligent recommendation workflows for student-advisor matching and academic analytics,
 incorporating retrieval-augmented generation and embedding-based similarity search.
@@ -71,7 +90,7 @@ Delivering production-ready AI services with robust REST APIs serving large univ
             <div class="timeline-item">
                 <div class="timeline-role">Project Associate</div>
                 <div class="timeline-org">Middleware & Runtime Systems Lab, Indian Institute of Science (IISc)</div>
-                <div class="timeline-location">Advisor: Dr. Sathish Vadhiyar — Funded by Shell Global</div>
+                <div class="timeline-location">Advisor: Dr. Sathish Vadhiyar. Funded by Shell Global</div>
                 <div class="timeline-location">Bangalore, India</div>
                 <div class="timeline-period">Jul 2024 - Jul 2025</div>
                 <div class="timeline-description">Architected SkipPar, a hybrid CPU-GPU LLM training framework (IPDPSW 2026, First Author).
@@ -116,11 +135,15 @@ reduction in end-to-end training time against AAAI- and ICPP-published baselines
             <div class="skill-category">
                 <h3>Systems & HPC</h3>
                 <ul class="skill-list">
+                    <li>vLLM</li>
+                    <li>SGLang</li>
+                    <li>LMCache</li>
                     <li>CUDA</li>
                     <li>OpenMP</li>
                     <li>OpenMPI</li>
                     <li>PyTorch (DDP, autograd hooks, backend extensions)</li>
                     <li>ZSim</li>
+                    <li>SLURM</li>
                 </ul>
             </div>
 
@@ -140,6 +163,7 @@ reduction in end-to-end training time against AAAI- and ICPP-published baselines
                 <h3>ML & Mathematics</h3>
                 <ul class="skill-list">
                     <li>PyTorch</li>
+                    <li>Contextual Bandits / Online Learning</li>
                     <li>OpenCV</li>
                     <li>Linear Algebra</li>
                     <li>Probabilistic Modeling</li>

@@ -1,4 +1,20 @@
 positions:
+  - title: "Graduate Research Assistant"
+    organization: "Texas A&M Engineering Experiment Station (TEES)"
+    department: "Texas A&M University"
+    location: "College Station, TX"
+    period: "Aug 2026 - Present"
+    type: "research"
+    description: |
+      Research on agentic AI serving systems: program-aware inference runtimes that treat a multi-turn
+      agent trace, rather than an isolated request, as the unit of scheduling. Building schedulers that
+      pause, resume, and time-share long-horizon agent workloads across a pool of models on shared GPUs,
+      with KV-cache management policies that decide per trace whether to offload conversational state to
+      CPU memory or recompute it on resume. Investigating online routing over heterogeneous model pools
+      (contextual bandits with delayed accuracy-latency rewards) and the architectural bottlenecks that
+      dominate end-to-end agent latency: cache hierarchies, host-device memory traffic, and CPU-side
+      runtime overheads.
+
   - title: "Student Software Developer"
     organization: "Texas A&M Engineering Experiment Station (TEES)"
     department: "Office of the Vice Chancellor of Engineering"
@@ -6,7 +22,7 @@ positions:
     period: "Jan 2026 - Present"
     type: "development"
     description: |
-      Building end-to-end AI-driven education platforms at institutional scale — full-stack development
+      Building end-to-end AI-driven education platforms at institutional scale, spanning full-stack development
       spanning data ingestion pipelines, LLM model integration, and scalable backend deployment.
       Designing intelligent recommendation workflows for student-advisor matching and academic analytics,
       incorporating retrieval-augmented generation and embedding-based similarity search.
@@ -14,7 +30,7 @@ positions:
 
   - title: "Project Associate"
     organization: "Middleware & Runtime Systems Lab, Indian Institute of Science (IISc)"
-    department: "Advisor: Dr. Sathish Vadhiyar — Funded by Shell Global"
+    department: "Advisor: Dr. Sathish Vadhiyar. Funded by Shell Global"
     location: "Bangalore, India"
     period: "Jul 2024 - Jul 2025"
     type: "research"
@@ -43,11 +59,15 @@ positions:
 
 skills:
   systems_hpc:
+    - "vLLM"
+    - "SGLang"
+    - "LMCache"
     - "CUDA"
     - "OpenMP"
     - "OpenMPI"
     - "PyTorch (DDP, autograd hooks, backend extensions)"
     - "ZSim"
+    - "SLURM"
   programming:
     - "C"
     - "C++"
@@ -57,6 +77,7 @@ skills:
     - "SystemVerilog"
   ml_math:
     - "PyTorch"
+    - "Contextual Bandits / Online Learning"
     - "OpenCV"
     - "Linear Algebra"
     - "Probabilistic Modeling"

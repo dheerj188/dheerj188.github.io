@@ -1,10 +1,27 @@
 publications:
+  - title: "TRACE-Router: Task-Consistent and Adaptive Online Routing for Agentic AI"
+    authors: "R. Raj, S. Kundu, S. Banerjee, <strong>D. Joshi</strong>, I. Vohra, T. Krishna"
+    venue: "arXiv preprint arXiv:2607.22465"
+    year: 2026
+    status: "Preprint"
+    note: "Co-Author"
+    doi: "10.48550/arXiv.2607.22465"
+    organizations:
+      - name: "Texas A&M University"
+        home: true
+      - name: "Georgia Institute of Technology"
+      - name: "Intel Labs"
+
   - title: "SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training via Efficient Scheduling of Parameter Updates"
     authors: "<strong>D. Joshi</strong>, K. Namboori, K. M. Kuriakose, S. Vadhiyar, S. Banerjee, A. Singh"
-    venue: "IEEE International Parallel and Distributed Processing Symposium (IPDPSW) 2026"
+    venue: "IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW) 2026"
     year: 2026
-    status: "Accepted"
+    status: "Published in IEEE Xplore, Aug 2026"
     note: "First Author"
+    organizations:
+      - name: "Indian Institute of Science"
+        home: true
+      - name: "Shell India"
 
   - title: "A Two-Layer Connected Component Algorithm for Target Extraction Using K-means and Morphology"
     authors: "<strong>D. Joshi</strong>, A. A. Gangotri, S. P. Chennamsetti, G. Bolar, G. Thiagarajan, S. Gurugopinath"
@@ -12,6 +29,9 @@ publications:
     year: 2023
     status: "Published"
     doi: "10.1109/VLSI-SoC57769.2023.10321878"
+    organizations:
+      - name: "PES University"
+        home: true
 
   - title: "DRL Based Service Migration and Resource Allocation in Vehicular Edge Networks"
     authors: "G. Bolar, <strong>D. Joshi</strong>, S. P. Chennamsetti, V. K. Tumuluru"
@@ -19,6 +39,9 @@ publications:
     year: 2024
     status: "Published"
     doi: "10.1109/aiiot58432.2024.10574641"
+    organizations:
+      - name: "PES University"
+        home: true
 
   - title: "Performance Comparison of Learning Methods for Soil Parameter Estimation using Hyperspectral Data"
     authors: "G. Bolar, <strong>D. Joshi</strong>, S. P. Chennamsetti, S. Gurugopinath"
@@ -26,18 +49,28 @@ publications:
     year: 2022
     status: "Published"
     doi: "10.1109/ICSC56524.2022.10089437"
+    organizations:
+      - name: "PES University"
+        home: true
 
 projects:
-  - title: "SkipPar — Hybrid CPU-GPU LLM Training Framework"
+  - title: "TRACE-Router: Task-Consistent Online Routing for Agentic AI"
+    description: "Online routing for agentic workloads at task-trace granularity rather than per request: each task is bound once at admission via a contextual bandit and pinned to a backend for the whole trace, with cold-start UCB updated from a delayed terminal accuracy-latency reward. Evaluated on tau-squared-Bench, LiveCodeBench, and Terminal-Bench against semantic- and complexity-router baselines."
+    tags: ["Contextual Bandits", "LLM Routing", "Agentic AI", "LiteLLM"]
+
+  - title: "Program-Aware Agentic Inference Serving"
+    description: "Serving runtimes that schedule long-horizon agent traces instead of independent requests: pause/resume-aware KV cache management (offload vs. recompute), multi-model GPU time-sharing via sleep/wake weight swapping to avoid cold-start stalls, and goodput-oriented admission control over heterogeneous model pools built on vLLM and SGLang."
+    tags: ["vLLM", "SGLang", "KV Cache", "Scheduling"]
+  - title: "SkipPar: Hybrid CPU-GPU LLM Training Framework"
     description: "Designed a co-execution paradigm overlapping GPU forward/backward passes with concurrent CPU parameter updates. Implemented a 4-thread producer-consumer pipeline with PyTorch DDP hooks. Achieved up to 17% reduction in end-to-end training time on A100/H100 GPUs with LLaMA-2 (10B) and GPT-2 (9B)."
     tags: ["CUDA", "PyTorch DDP", "LLM Training"]
 
-  - title: "PAC-IPV — Prefetch-Aware Cache Replacement"
+  - title: "PAC-IPV: Prefetch-Aware Cache Replacement"
     description: "Extended an RRIP-based LLC replacement policy in ZSim with prefetch-aware RRPV assignment. Derived a probabilistic Markov-chain analytical model validated via Monte Carlo analysis (<1.5% error)."
     tags: ["C++", "ZSim", "Computer Architecture"]
     github: ""
 
-  - title: "VAJRA — Heterogeneous GPU/FPGA Edge Cluster"
+  - title: "VAJRA: Heterogeneous GPU/FPGA Edge Cluster"
     description: "Architected a heterogeneous edge cluster (Raspberry Pi 5, Intel DE10 SoC FPGAs, NVIDIA Jetson Orin) for model-parallel DNN inference. Demonstrated 400M-parameter inference using 4 GB collective cluster memory."
     tags: ["C", "CUDA", "FPGA", "Embedded Linux"]
     github: "https://github.com/dheerj188"

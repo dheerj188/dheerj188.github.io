@@ -1,5 +1,5 @@
 timeline:
-  - date: "Apr – May 2022"
+  - date: "Apr to May 2022"
     title: "Student Vice Chair, IEEE Communications Society"
     description: "Served as Student Vice Chair of the IEEE Communications Society (ComSoc) chapter, organizing events and driving student engagement in communications engineering."
     category: "leadership"
@@ -10,7 +10,7 @@ timeline:
     description: "Research on hyperspectral prediction accepted at the International Conference on Semantic Computing (ICSC 2022)."
     category: "publication"
 
-  - date: "Jun – Jul 2023"
+  - date: "Jun to Jul 2023"
     title: "Workshop Development & Student Mentoring, CIE"
     description: "Joined CIE to develop workshops and mentor students in Heterogeneous Computing and Machine Learning."
     category: "leadership"
@@ -30,7 +30,7 @@ timeline:
 
   - date: "Nov 2023"
     title: "Semiconductor Summit, IIT Bombay"
-    description: "Visited the Indian Institute of Technology Bombay to attend the Semiconductor Summit — engaging with industry leaders and researchers in chip design and fabrication."
+    description: "Visited the Indian Institute of Technology Bombay to attend the Semiconductor Summit, engaging with industry leaders and researchers in chip design and fabrication."
     category: "conference"
     location: "Mumbai, India"
     image: "images/professional/iit_bombay.jpg"
@@ -49,7 +49,7 @@ timeline:
     location: "Bengaluru, India"
     image: "images/professional/intel_iisc.jpg"
 
-  - date: "May – Jul 2024"
+  - date: "May to Jul 2024"
     title: "VAJRA: Heterogeneous Cluster for Edge AI, PESU"
     description: "Led a team to design and build VAJRA, a heterogeneous compute cluster for Edge AI R&D at PES University. The project was selected for funding by IHFC, IIT Delhi."
     category: "research"
@@ -58,7 +58,7 @@ timeline:
 
   - date: "Feb 2025"
     title: "NVIDIA DGX Blackwell Launch Event"
-    description: "Attended the NVIDIA DGX Blackwell Launch Event at Leela Palace, Bengaluru, on behalf of the IISc lab — engaging with NVIDIA leadership on the future of AI compute infrastructure."
+    description: "Attended the NVIDIA DGX Blackwell Launch Event at Leela Palace, Bengaluru, on behalf of the IISc lab, engaging with NVIDIA leadership on the future of AI compute infrastructure."
     category: "conference"
     location: "Bengaluru, India"
     image: "images/professional/nvidia_leela.jpg"
@@ -77,7 +77,23 @@ timeline:
     location: "College Station, TX"
 
   - date: "Mar 2026"
-    title: "Paper Accepted at IPDPSW 2026"
-    description: "Paper accepted at the IEEE International Parallel and Distributed Processing Symposium (IPDPSW) 2026 — SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training. Presenting in New Orleans."
+    title: "SkipPar Accepted at IPDPSW 2026"
+    description: "SkipPar: A Hybrid CPU-GPU Framework for Accelerating LLM Training via Efficient Scheduling of Parameter Updates was accepted at the IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW) 2026 and presented in New Orleans. First-author work from the Middleware and Runtime Systems Lab at IISc."
     category: "publication"
     location: "New Orleans, USA"
+
+  - date: "Jul 2026"
+    title: "TRACE-Router Released on arXiv"
+    description: "Co-authored TRACE-Router: Task-Consistent and Adaptive Online Routing for Agentic AI, an online routing policy that binds each agent task to a backend at trace granularity using a contextual bandit with delayed accuracy and latency rewards."
+    category: "publication"
+
+  - date: "Aug 2026"
+    title: "SkipPar Published in IEEE Xplore"
+    description: "SkipPar appeared in IEEE Xplore as part of the IPDPSW 2026 proceedings, covering the CPU-GPU co-execution design that overlaps GPU forward and backward passes with concurrent CPU parameter updates for up to 17% faster end-to-end LLM training."
+    category: "publication"
+
+  - date: "Aug 2026"
+    title: "Joined Texas A&M as Graduate Research Assistant"
+    description: "Appointed Graduate Research Assistant at the Texas A&M Engineering Experiment Station (TEES), working on agentic AI serving systems: trace-granular inference scheduling, KV cache offload and recompute policies, multi-model GPU time-sharing, and online routing across heterogeneous model pools."
+    category: "research"
+    location: "College Station, TX"
